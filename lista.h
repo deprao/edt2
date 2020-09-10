@@ -35,7 +35,7 @@ listaStruct insertBefore(listaStruct lista, tipo elemento, tipo elemento_2);
 
 listaStruct insertAfter(listaStruct lista, tipo elemento, tipo elemento_2);
 
-listaStruct removeElemento(listaStruct lista, tipo elemento);
+void removeElemento(listaStruct lista, tipo elemento);
 
 void liberaLista(listaStruct lista);
 

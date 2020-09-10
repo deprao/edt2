@@ -55,3 +55,7 @@ char *getCirculoCorp(Circulo circulo){
     return c->corp;
 }
 
+char *getCirculoSw(Circulo circulo){
+    CirculoStruct *c = (CirculoStruct*)circulo;
+    return c->cw;
+}

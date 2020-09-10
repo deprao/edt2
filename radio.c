@@ -47,3 +47,8 @@ char *getRadioCStroke(Radio radio){
     RadioStruct *r = (RadioStruct*)radio;
     return r->cstrk;
 }
+
+char *getRadioSw(Radio radio){
+    RadioStruct *r = (RadioStruct*)radio;
+    return r->sw;
+}

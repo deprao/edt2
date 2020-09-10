@@ -5,7 +5,7 @@
 typedef void* Hidrante;
 
 /*Cria um elementro da struct Hidrante_S*/
-Hidrante criaHidrante(char *, double, double, char *, char *, char *);
+Hidrante criaHidrante(char *id, double x, double y, char *cfill, char *cstrk, char *sw);
 
 /*Retorna a Id de um elemento de uma lista de hidrantes*/
 char *getHidranteId(Hidrante);
@@ -21,5 +21,7 @@ char *getHidranteCFill(Hidrante);
 
 /*Retorna CStroke de um elemento de uma lista de hidrantes*/
 char *getHidranteCStroke(Hidrante);
+
+char *getHidranteSw(Hidrante hidrante);
 
 #endif

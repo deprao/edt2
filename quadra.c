@@ -61,3 +61,13 @@ char *getQuadraCStroke(Quadra quadra){
     QuadraStruct *q = (QuadraStruct*)quadra;
     return q->cstrk;
 }
+
+char *getQuadraSw(Quadra quadra){
+    QuadraStruct *q = (QuadraStruct*)quadra;
+    return q->sw;
+}
+
+void setQuadCStroke(Quadra quadra, char *Cstroke){
+    QuadraStruct *q = (QuadraStruct*)quadra;
+    strcpy(q->cstrk, Cstroke);
+}

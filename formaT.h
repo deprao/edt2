@@ -5,7 +5,7 @@
 typedef void* Texto;
 
 /*cria um elemento do tipo texto, e retorna um ponteiro para o elemento criado*/
-Texto criaTexto(int, double, double, char *, char *, char *);
+Texto criaTexto(int id, double x, double y, char *corb, char *corp, char *text);
 
 /*recebe o endereço de um elemento da lista e retorna o Id do elemento*/
 int getTextoId(Texto texto);

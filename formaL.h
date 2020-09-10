@@ -5,7 +5,7 @@
 typedef void* Linha;
 
 /*cria um elemento do tipo Linha_S e retorna o endereço do elemento criado*/
-Linha criaLinha(int, double, double, double, double, char *);
+Linha criaLinha(int id, double x, double y, double x2, double y2, char *cor);
 
 /*recebe o endereço de um elemento da lista de linhas e retorna o id*/
 int getLinhaId(Linha linha);

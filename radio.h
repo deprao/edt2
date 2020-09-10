@@ -5,7 +5,7 @@
 typedef void* Radio;
 
 /*cria um elemento da struct Radio_S*/
-Radio criaRadio(char*, double, double, char*, char*, char*);
+Radio criaRadio(char *id, double x, double y, char *cfill, char *cstrk, char *sw);
 
 /*retorna a Id de um elemento da lista de radio*/
 char *getRadioId(Radio);
@@ -21,5 +21,7 @@ char *getRadioCFill(Radio);
 
 /*retorna o CStroke de um elemento da lista de radio*/
 char *getRadioCStroke(Radio);
+
+char *getRadioSw(Radio radio);
 
 #endif

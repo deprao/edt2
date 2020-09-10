@@ -5,7 +5,7 @@
 typedef void* Quadra;
 
 /*Cria um elemento do tipo da struct Quadra_S*/
-Quadra criaQuadra(char *, double, double, double, double, char *, char *, char *);
+Quadra criaQuadra(char *cep, double x, double y, double w, double h, char *cfill, char *cstrk, char *sw);
 
 /*Retorna Cep de um elemento da lista de Quadras*/
 char *getQuadraCep(Quadra);
@@ -27,5 +27,11 @@ char *getQuadraCFill(Quadra);
 
 /*Retorna o CStroke de um elemento da lista de Quadras*/
 char *getQuadraCStroke(Quadra);
+
+/*Retorna a espessura da borda de um elemento da lista de Quadras*/
+char *getQuadraSw(Quadra quadra);
+
+/*Atribui uma cor de borda CStroke a um elemento da lista de Quadras*/
+void setQuadCStroke(Quadra quadra, char *Cstroke);
 
 #endif

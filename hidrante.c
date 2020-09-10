@@ -19,6 +19,7 @@ Hidrante criaHidrante(char *id, double x, double y, char *cfill, char *cstrk, ch
     h->y = y;
     strcpy(h->cfill, cfill);
     strcpy(h->cstrk, cstrk);
+    strcpy(h->sw, sw);
     return h;
 }
 
@@ -45,4 +46,9 @@ char *getHidranteCFill(Hidrante hidrante){
 char *getHidranteCStroke(Hidrante hidrante){
     HidranteStruct *h = (HidranteStruct*)hidrante;
     return h->cstrk;
+}
+
+char *getHidranteSw(Hidrante hidrante){
+    HidranteStruct *h = (HidranteStruct*)hidrante;
+    return h->sw;
 }

@@ -24,26 +24,31 @@ Semaforo criaSemaforo(char *id, double x, double y, char *cfill, char *cstrk, ch
 }
 
 char *getSemaforoId(Semaforo semaforo){
-    SemaforoStruct *s = (Semaforo)semaforo;
+    SemaforoStruct *s = (SemaforoStruct*)semaforo;
     return s->id;
 }
 
 double getSemaforoX(Semaforo semaforo){
-    SemaforoStruct *s = (Semaforo)semaforo;
+    SemaforoStruct *s = (SemaforoStruct*)semaforo;
     return s->x;
 }
 
 double getSemaforoY(Semaforo semaforo){
-    SemaforoStruct *s = (Semaforo)semaforo;
+    SemaforoStruct *s = (SemaforoStruct*)semaforo;
     return s->y;
 }
 
 char *getSemaforoCFill(Semaforo semaforo){
-    SemaforoStruct *s = (Semaforo)semaforo;
+    SemaforoStruct *s = (SemaforoStruct*)semaforo;
     return s->cfill;
 }
 
 char *getSemaforoCStroke(Semaforo semaforo){
-    SemaforoStruct *s = (Semaforo)semaforo;
+    SemaforoStruct *s = (SemaforoStruct*)semaforo;
     return s->cstrk;
+}
+
+char *getSemaforoSw(Semaforo semaforo){
+    SemaforoStruct *s = (SemaforoStruct*)semaforo;
+    return s->sw;
 }

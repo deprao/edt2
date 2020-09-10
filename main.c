@@ -61,7 +61,7 @@ int main (int argc, char *argv[]){
             }
     }
 
-    tratamentoArquivos(arquivoGeo, arquivoQry, diretorio, pastaSaida);
+    tratamento(diretorio, pastaSaida, arquivoGeo, arquivoQry);
 
     free(arquivoGeo);
     free(arquivoQry);
